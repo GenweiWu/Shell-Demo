@@ -27,6 +27,15 @@ function test1b(){
 	echo "${line/%*b/-}"
 }
 
+function test1c(){
+	line="1/2\3"
+	echo "${line}"
+	#替换/
+	echo "${line/\//a}"
+	#替换\
+	echo "${line/\\/a}"
+}
+
 function test2()
 {
 	line=123a456a789
@@ -50,14 +59,16 @@ function test3()
 
 }
 
-test1
+#test1
 
-echo -----------------;test1a
+#echo -----------------;test1a
 
-echo -----------------;test1b
+#echo -----------------;test1b
 
-echo -----------------;test2
+echo -----------------;test1c
 
-echo -----------------;test3
+#echo -----------------;test2
+
+#echo -----------------;test3
 
 
