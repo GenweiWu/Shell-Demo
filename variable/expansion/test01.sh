@@ -28,12 +28,14 @@ function test1b(){
 }
 
 function test1c(){
-	line="1/2\3"
+	line="1/2\3&4"
 	echo "${line}"
 	#替换/
 	echo "${line/\//a}"
 	#替换\
 	echo "${line/\\/a}"
+	#替换&
+	echo "${line/&/a}"
 }
 
 function test2()
